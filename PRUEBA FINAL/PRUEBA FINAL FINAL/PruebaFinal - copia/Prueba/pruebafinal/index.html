@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoliVentas</title>
+    <link rel="icon" href="./src/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Libreria para la galeria de productos mas vendidos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <!--SCRIPT SWIPER-->
+    <link rel="stylesheet" href="./src/css/normalize.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <nav class="header_bar">
+        <div class="contenedor_header">
+            <h1>PoliVentas</h1>
+            <ul class="header_links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#Servicios">Servicios</a></li>
+                <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+
+            </ul>
+            <div class="header_buttons">
+                <a href="registro.html" class="btn btn-primary">Registrarse</a>
+                <a href="ingreso.html" class="btn btn-secondary">Ingresar</a>
+            </div>
+        </div>
+    </nav>
+    <!-- FIN ENCABEZADO -->
+
+    <!-- SECCION MAS VENDIDO -->
+    <header class="most-selled">
+        <div class="text-selled">
+            <h2 class="text-selledDos">Lo más vendido</h2>
+        </div>
+
+        <!-- Primer producto mas vendido -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Primer producto mas vendido -->
+                <div class="swiper-slide">
+                    <div class="icons">
+                        <div class="product-info">
+                            <img src="./src/images/almuerzopro.jpg" alt="almuerzo" loading="lazy">
+                            <div class="product-details">
+                                <h3 class="name-product-most1">Almuerzo Proteico</h3>
+                                <p>Si deseas un balance entre carbohidratos, proteína y grasas saludables, este almuerzo
+                                    es para ti.</p>
+                                <a href="./detalle-producto.html" class="btn btn-1">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segundo producto mas vendido -->
+                <div class="swiper-slide">
+                    <div class="icons">
+                        <div class="product-info">
+                            <img src="./src/images/j44.png" alt="jordan" loading="lazy">
+                            <div class="product-details">
+                                <h3 class="name-product-most1">Jordan 4</h3>
+                                <p>Luce genial en cualquier etapa del semestre con estos Jordan.
+                                </p>
+                                <a href="./detalle-producto.html" class="btn btn-1">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tercer producto mas vendido -->
+                <div class="swiper-slide">
+                    <div class="icons">
+                        <div class="product-info">
+                            <img src="./src/images/redes.jpg" alt="redes" loading="lazy">
+                            <div class="product-details">
+                                <h3 class="name-product-most1">Curso de redes</h3>
+                                <p>¡Para que mamita Moni no te haga hacer segunda, no me falle mi guagua!</p>
+                                <a href="./detalle-producto.html" class="btn btn-1">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cuarto producto mas vendido -->
+                <div class="swiper-slide">
+                    <div class="icons">
+                        <div class="product-info">
+                            <img src="./src/images/libroingles.jpg" alt="inglish" loading="lazy">
+                            <div class="product-details">
+                                <h3 class="name-product-most1">Libro Ingles</h3>
+                                <p>Libro de ingles Begginner</p>
+                                <a href="./detalle-producto.html" class="btn btn-1">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- FIN SECCION MAS VENDIDO -->
+
+    <!-- INICIO SECCION CATEGORIAS -->
+    <main class="contenedor">
+        <section class="categories-container">
+            <h1>Categorias</h1>
+            <div class="category">
+                <div class="category-content">
+                    <img src="./src/images/ropa.PNG" alt="Ropa" loading="lazy">
+                    <h3>Ropa</h3>
+                    <a class="button" href="./productos-categoría.html">Ver más</a>
+                </div>
+            </div>
+            <div class="category">
+                <div class="category-content">
+                    <img src="./src/images/comida.PNG" alt="Comida" loading="lazy">
+                    <h3>Comida</h3>
+                    <a class="button" href="./productos-categoría.html">Ver más</a>
+                </div>
+            </div>
+            <div class="category">
+                <div class="category-content">
+                    <img src="./src/images/libros.PNG" alt="Libros" loading="lazy">
+                    <h3>Libros</h3>
+                    <a class="button" href="./productos-categoría.html">Ver más</a>
+                </div>
+            </div>
+            <div class="category category-last">
+                <div class="category-content">
+                    <img src="./src/images/cursos.PNG" alt="Cursos" loading="lazy">
+                    <h3>Cursos</h3>
+                    <a class="button" href="./productos-categoría.html">Ver más</a>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <h2 id="Servicios">Servicios</h2>
+            <p>En <strong>PoliVentas</strong>, ofrecemos una plataforma donde los estudiantes de la Politécnica pueden:
+            </p>
+            <ul>
+                <li><strong>Comprar</strong> productos nuevos y usados de manera segura y confiable.</li>
+                <li><strong>Vender</strong> artículos que ya no necesites a otros estudiantes.</li>
+                <li><strong>Alquilar</strong> productos para cubrir necesidades temporales, como libros, equipos
+                    tecnológicos, entre otros.</li>
+            </ul>
+            <p>¡Únete a nuestra comunidad y aprovecha todos los beneficios que ofrecemos para ti!</p>
+        </section>
+        <section class="about-us">
+            <h2 id="quienes-somos">¿Quiénes somos?</h2>
+            <p>¡Hey! Nos complace que estés aquí, te cuento que esta página es hecha por los chicos de la EPN para más
+                chicos de la Poli, aquí podrás obtener un sin fin de artículos que te serán útiles en tu estadía
+                estudiantil.</p>
+        </section>
+
+    </main>
+
+    <!-- FIN SECCION CATEGORIAS -->
+
+
+    <!-- INICIO FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>Grupo 2</p>
+            <p>Derechos reservados</p>
+            <div class="social-icons">
+                <a href="#"><img src="./src-detalle-producto/imágenes/facebook.png" alt="Facebook" loading="lazy"></a>
+                <a href="#"><img src="./src-detalle-producto/imágenes/twitter.png" alt="Twitter" loading="lazy"></a>
+                <a href="#"><img src="./src-detalle-producto/imágenes/google.png" alt="Google" loading="lazy"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN INICIO FOOTER -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            coverflowEffect: {
+                depth: 500,
+                modifer: 1,
+                slidesShadows: true,
+                ratote: 0,
+                stretch: 0
+            }
+        })
+    </script>
+</body>
+
+</html>

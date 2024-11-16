@@ -1,0 +1,268 @@
+/* Declaración de variables CSS */
+:root {
+    --colorPrimario: #f8f9fa;
+    --colorSecundario: #212529;
+    --colorTerciario: #055092;
+    --colorFuente: #ffffff;
+    --colorFuenteSecundario: #212529;
+    --colorHover: #0a58ca;
+    --colorBoton: #000000;
+    --colorBotonHover: #0a58ca;
+    --separacion: 2rem; 
+    --fuentePrincipal: "Roboto", sans-serif;
+    --fuenteSecundaria: "Lato", sans-serif;
+    --fuenteMontserrat: "Montserrat", sans-serif;
+}
+
+/* Estilos generales */
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 62.5%; /* Esto hace que 1rem sea igual a 10px */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteMontserrat);
+    font-size: 1.4rem; /* Reducir tamaño de texto */
+    line-height: 1.5;
+    background-color: var(--colorPrimario);
+    color: #000000; /* Color negro para el texto */
+    margin: 0;
+}
+
+/* Estilos del contenedor principal */
+.container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 1rem; /* Agregar separación en los bordes laterales */
+}
+
+/* Estilos para la flecha */
+
+.arrowleft{
+    height: 50vh;
+    text-align: center;
+}
+.arrowleft .flecha i{
+    font-size: 4.4rem;
+    color: var(--colorTerciario);
+    transition: transform 0.2s;
+
+}
+.arrowleft .flecha i:hover{
+    transform: scale(1.4);
+
+}
+
+/* Fin de estilos para la flecha */
+
+/* Estilos del botón de regresar */
+.back-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.back-arrow {
+    width: 55px; /* Tamaño ajustado */
+    height: auto;
+    margin-top: 80px;
+}
+
+/* Caja de fondo oscuro para el login */
+.black-box {
+    background-color: #f8debb;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 40rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+/* Estilos de encabezado y footer */
+.header {
+    background-color: var(--colorTerciario);
+    color: rgb(255, 255, 255);
+    font-family: var(--fuenteMontserrat);
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 3rem 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.footer {
+    font-family: var(--fuenteSecundaria);
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #000000;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+/* Cuadro azul para la palabra 'Ingreso' */
+.ingreso-box {
+    background-color: var(--colorTerciario);
+    color: var(--colorFuente);
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos de login */
+.login-box p {
+    color: #000000;
+    font-size: 1.6rem;
+}
+
+/* Estilos para los formularios */
+.input-group {
+    text-align: left;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column; /* Asegura que los elementos dentro de .input-group se apilen */
+}
+
+
+
+.input-group label {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    min-width: 120px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    min-width: 250px;
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
+
+/* Separación entre el email y la contraseña */
+.input-group.email {
+    margin-bottom: 3rem;
+}
+
+/* Botón de envío */
+form button[type="submit"] {
+    width: auto;
+    padding: 1rem 2rem;
+    background-color: var(--colorBoton);
+    color: var(--colorPrimario);
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 0; /* Centrado el botón */
+    margin-top: 1.5rem; /* Añadir margen superior para separar del formulario */
+}
+
+form button[type="submit"]:hover {
+    background-color: var(--colorBotonHover);
+}
+
+/* Login social */
+.social-login {
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-login p {
+    color: #000000;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+}
+
+.social-login img {
+    width: 40px;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+/* Contenedor que agrupa el texto "¿No tienes una cuenta?" y "Regístrate ahora" */
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Estilo para "¿No tienes una cuenta?" */
+.register {
+    color: #000000;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-right: 2rem;
+}
+
+/* Estilo para "Regístrate ahora" */
+.register-now {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Media queries para pantallas más grandes */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .black-box {
+        max-width: 50rem;
+    }
+
+    .login-box h2 {
+        font-size: 2.4rem;
+    }
+
+    form input[type="email"],
+    form input[type="password"] {
+        font-size: 1.4rem;
+    }
+
+    form button[type="submit"] {
+        font-size: 1.6rem;
+    }
+
+    /* Para pantallas más grandes, los campos de correo y contraseña estarán en su posición normal (al lado de los labels) */
+    .input-group {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .input-group label {
+        margin-right: 1rem;
+    }
+}

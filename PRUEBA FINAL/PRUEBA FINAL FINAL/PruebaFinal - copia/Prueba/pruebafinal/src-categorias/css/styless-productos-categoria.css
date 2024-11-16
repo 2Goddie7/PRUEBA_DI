@@ -1,0 +1,340 @@
+/* Declaration of variables CSS */
+:root {
+    --colorRojo: #d43f3a;
+    --colorAzul:  #055092;
+    --colorPiel:   #f0cb9f;
+    --colorPlomo:   #d9d9d9;
+    --colorBlanco: #FFFFFF;
+    --colorNegro: #000;
+    --fuentePrincipal: "Montserrat", sans-serif;
+}
+
+/* General styles for the document HTML  */
+html {
+    background-color: var(--colorBlanco);
+}
+
+body{
+    font-family: var(--fuentePrincipal);
+    display: flex;
+    flex-direction: column;  /* Coloca los elementos en una columna */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura del viewport */
+    margin: 0; /* Elimina márgenes predeterminados */
+}
+
+
+/*BORDES DE LAS CAJAS*/
+
+section {
+    flex: 1; /* Hace que el main ocupe todo el espacio restante */}
+
+
+
+/*.container-productos {   
+}*/
+
+.footer {
+
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center; /* Centra el contenido dentro del footer */
+}
+/*FIN DE LOS BORDES*
+
+
+/*MODIFICAR EL TITULO PRINCIPAL*/
+
+.navbar__container {
+    display: flex;             /* Usamos flexbox */
+    justify-content: center;   /* Centra el contenido horizontalmente */
+    align-items: center;       /* Centra el contenido verticalmente */
+    height: 100px;             /* Puedes ajustar la altura si es necesario */
+    background-color: var(--colorAzul); /*color azul en el titulo*/
+}
+
+.navbar__logo {
+    font-size: 2rem;  /* Ajusta el tamaño de la fuente */
+    font-weight: bold;  /* Puedes hacer que el logo sea más prominente */
+    cursor: pointer;
+    color: var(--colorBlanco);
+}
+/* fin de modificar le titulo */
+
+
+
+/*modificar el titulo2*/
+.hero_text {
+    display: flex;
+    justify-content: center; /* Distribuye el contenido con espacio entre ellos */
+    align-items: center;  /* Centra el contenido verticalmente */
+}
+
+.hero_title{
+    background-color: var(--colorBlanco);
+    padding: .7rem 2rem;
+    font-size: 2rem;
+}
+
+.hero_button {
+    
+    margin-left: 5rem; /* Mueve el botón más cerca del título */
+}
+
+.hero_button .flecha-img{
+    margin-top: 1rem;
+    width: 50px;
+    transition: transform 0.2s;
+}
+
+.hero_button .flecha-img:hover{
+    transform: scale(1.4);
+}
+
+
+/*fin de modificar le tiutlo 2*/
+
+
+
+
+/*contenido*/
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.box-button{
+    margin-top: 10px;
+    background-color: var(--colorRojo);
+    color: var(--colorBlanco);
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.4s ease;
+    padding: 8px;
+    border-radius: 6px;
+}   
+.box-button:hover{
+    transform: scale(0.9);
+}
+
+.box-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;  /* Ajusta el valor según el espacio que desees */
+}
+
+/*caja2*/
+.large-box2{    
+    display: flex;             /* Alinea los elementos en una fila */
+    justify-content: space-between;
+    flex-direction: column; /* Distribuye el espacio entre las cajas */
+    gap: 1rem;
+}
+
+
+.box5, .box6, .box7, .box8 {
+    width: 100%;  /* Opcional: Ajusta el ancho de las cajas para que quepan en una fila */
+    height: 250px; /* Altura de las cajas */
+    background-color: var(--colorPlomo); /* Solo un color de fondo de ejemplo */
+    animation: fadeIn 1s ease-in-out forwards; /* Aplica la animación aquí */
+}
+
+/*caja1*/
+.large-box1{
+    display: flex;    
+    flex-direction: column;        
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box1, .box2, .box3, .box4 {
+    width: 100%;  /* Opcional: Ajusta el ancho de las cajas para que quepan en una fila */
+    height: 250px; /* Altura de las cajas */
+    background-color: var(--colorPlomo); /* Solo un color de fondo de ejemplo */
+    animation: fadeIn 1s ease-in-out forwards; /* Aplica la animación aquí */
+}
+
+
+/*CAJAS*/
+
+/*CAJA 1*/
+.box1-title2{
+    background-color: var(--colorRojo);
+}
+/*FIN CAJA1*/
+.box2-title2{
+    background-color: var(--colorRojo);
+}
+
+.box3-title2{
+    background-color: var(--colorRojo);
+}
+.box4-title2{
+    background-color: var(--colorRojo);
+}
+.box5-title2{
+    background-color: var(--colorRojo);
+}
+.box6-title2{
+    background-color: var(--colorRojo);
+}
+.box7-title2{
+    background-color: var(--colorRojo);
+}
+.box8-title2{
+    background-color: var(--colorRojo);
+}
+
+/* Centrando los títulos dentro de las cajas */
+.box1-title1, .box2-title1, .box3-title1, .box4-title1, 
+.box5-title1, .box6-title1, .box7-title1, .box8-title1 {
+    margin: 0; /* Elimina márgenes extra */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Los títulos secundarios */
+.box1-title2, .box2-title2, .box3-title2, .box4-title2, 
+.box5-title2, .box6-title2, .box7-title2, .box8-title2 {
+    margin-top: 10px; /* Espacio entre los títulos */
+    background-color: var(--colorRojo);
+    color: var(--colorBlanco);
+    padding: 5px 10px; /* Añade espacio alrededor del texto */
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Opcional: Estilo de los títulos dentro de las cajas */
+.box1-text, .box2-text, .box3-text, .box4-text,
+.box5-text, .box6-text, .box7-text, .box8-text {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centrar las imágenes dentro de las cajas y añadir padding-top */
+.box1, .box2, .box3, .box4, 
+.box5, .box6, .box7, .box8 {
+    display: flex;              /* Usamos flexbox para alinear el contenido */
+    justify-content: center;    /* Centra la imagen horizontalmente */
+    align-items: center;        /* Centra la imagen verticalmente */
+    flex-direction: column;     /* Alinea los elementos de arriba hacia abajo */
+}
+
+.box1-image, .box2-image, .box3-image, .box4-image, 
+.box5-image, .box6-image, .box7-image, .box8-image {
+                   /* Hace que la imagen ocupe el ancho completo de la caja */
+    max-width: 100%;            /* Asegura que la imagen no se expanda más allá del contenedor */
+    height: auto;               /* Mantiene la proporción original de la imagen */
+    padding-top: 1rem;          /* Añade un espacio de 1rem en la parte superior de la imagen */
+}
+
+
+/*modificar el footer*/
+
+.footer {
+    display: flex;                /* Activamos flexbox */
+    justify-content: center;
+    flex-direction: column; /* Distribuye los elementos entre el espacio disponible */
+    align-items: center;          /* Centra verticalmente los elementos */            
+    background-color: #000;
+}
+
+p.footer__title1{
+    margin: 0;
+    padding: .5rem;
+}
+
+p.footer__title2{
+    margin: 0;
+    padding: .5rem;
+}
+
+.footer__title1 {
+    display: flex;                      /* Se expande para ocupar el espacio restante */
+    text-align: center;             
+    color: #d9d9d9;
+}
+
+.footer__title2 {
+    display: flex;                      /* Se expande para ocupar el espacio restante */
+    text-align: center;             
+    color: #d9d9d9;
+}
+
+.footer__buttons {
+    text-align: center;             /* Alinea las imágenes a la derecha */            /* Añade un poco de espacio desde el borde */
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.footer__buttons img {
+    width: 30px;  /* Tamaño de las imágenes */
+    height: 30px; /* Asegura que las imágenes sean cuadradas */
+    margin: 0 10px; /* Espacio entre las imágenes */
+    object-fit: contain; /* Mantiene la proporción original de las imágenes */
+    margin-right: 0.5rem;
+    
+}
+
+
+/* Pantallas de 1024px y menos */
+@media (width>=768px) {
+    /* Navbar */
+
+    .navbar__container {
+        height: 80px;
+    }
+
+    .navbar__logo {
+        font-size: 1.5rem; /* Reducir el tamaño del logo */
+    }
+
+    /* Hero */
+    .hero_text {
+        flex-direction: column; /* Cambiar la dirección de los elementos */
+        align-items: center; /* Centrar los elementos */
+    }
+
+    .hero_title {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .hero_button {
+        margin-left: 0; /* Eliminar margen izquierdo del botón */
+        margin-top: 10px; /* Añadir algo de espacio arriba */
+    }
+
+    /* Cajas (Box groups) */
+    .large-box1,.large-box2 {
+        flex-direction: row; /* Cambiar a columna */
+    }
+
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+        width: 100%; /* Establecer un ancho más flexible */
+        margin: 10px auto; /* Centrar las cajas y darles un margen */
+    }
+
+    /* Footer */
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+      /* Footer */
+      .footer .footer__title1{
+        margin: 1rem;
+    }
+
+}
+
+
+
+
